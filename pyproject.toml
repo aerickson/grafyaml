@@ -21,7 +21,7 @@ classifiers = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = ">=3.7,<4.0"
 "dogpile.cache" = "^1.2.2"
 python-slugify = "^8.0.1"
 requests = "^2.31.0"
