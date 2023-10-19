@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "grafyaml"
+version = "1.4.1"
+url = "https://github.com/deliveryhero/grafyaml"
+description = "A nice and easy way to template Grafana dashboards in YAML"
+readme = "README.md"
+license = "Apache v2.0"
+classifiers = [
+        "Environment :: Console",
+        "Intended Audience :: Developers",
+        "Intended Audience :: Information Technology",
+        "Intended Audience :: System Administrators",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.8",
+        "Topic :: Utilities",
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+"dogpile.cache" = "^1.2.2"
+python-slugify = "^8.0.1"
+requests = "^2.31.0"
+PyYAML = "^6.0.1"
+six = "^1.16.0"
+voluptuous = "^0.13.1"
+
+[tool.poetry.scripts]
+grafana-dashboard = 'grafana_dashboards.cmd:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
