@@ -1,9 +1,12 @@
 [tool.poetry]
 name = "grafyaml"
 version = "1.4.1"
-url = "https://github.com/deliveryhero/grafyaml"
+homepage = "https://github.com/deliveryhero/grafyaml"
 description = "A nice and easy way to template Grafana dashboards in YAML"
 readme = "README.md"
+authors = [
+    "Paul Belanger <paul.belanger@polybeacon.com>",
+]
 license = "Apache v2.0"
 classifiers = [
         "Environment :: Console",
