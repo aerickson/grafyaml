@@ -32,6 +32,7 @@ voluptuous = "^0.13.1"
 [tool.poetry.scripts]
 grafana-dashboard = 'grafana_dashboards.cmd:main'
 
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
