@@ -28,9 +28,9 @@ packages=[
 python = ">=3.8,<4.0"
 "dogpile.cache" = "^1.2.2"
 python-slugify = "^8.0.1"
-requests = "^2.31.0"
+requests = "*"
 PyYAML = "^6.0.1"
-six = "^1.16.0"
+six = "*"
 voluptuous = "<=0.10.5"
 
 [tool.poetry.scripts]
