@@ -19,9 +19,13 @@ classifiers = [
         "Programming Language :: Python :: 3.8",
         "Topic :: Utilities",
 ]
+packages=[
+    { include = "grafana_dashboards/**/*.py" },
+]
+
 
 [tool.poetry.dependencies]
-python = ">=3.7,<4.0"
+python = ">=3.8,<4.0"
 "dogpile.cache" = "^1.2.2"
 python-slugify = "^8.0.1"
 requests = "^2.31.0"
@@ -32,6 +36,9 @@ voluptuous = "^0.13.1"
 [tool.poetry.scripts]
 grafana-dashboard = 'grafana_dashboards.cmd:main'
 
+
+[tool.poetry.group.dev.dependencies]
+tox = "^4.11.3"
 
 [build-system]
 requires = ["poetry-core"]
