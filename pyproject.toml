@@ -26,10 +26,10 @@ packages=[
 
 [tool.poetry.dependencies]
 python = ">=3.8,<4.0"
-"dogpile.cache" = "^1.2.2"
-python-slugify = "^8.0.1"
+"dogpile.cache" = "*"
+python-slugify = "*"
 requests = "*"
-PyYAML = "^6.0.1"
+PyYAML = "*"
 six = "*"
 voluptuous = "<=0.10.5"
 
